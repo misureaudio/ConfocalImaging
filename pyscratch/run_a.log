@@ -1,0 +1,16 @@
+lambda = 500.0 nm | n0 = 1.5 | NA = 1.4
+alpha  = 68.96 deg | cos(alpha) = 0.3590
+k_med  = 1.8850e+07 1/m | k0*NA = 1.7593e+07 1/m
+
+[check z=0]  I(1/2): quad=0.523388-0.000000j  closed=0.523260  diff=1.28e-04
+[check z=0]  I(5/2): quad=0.277879-0.000000j  closed=0.277793  diff=8.63e-05
+
+--- axial FWHM (nm) ---
+  paraxial (Abbe) :    678.0
+  full scalar RW  :    467.9
+  full vectorial  :    478.9
+--- lateral FWHM (nm) ---
+  paraxial (Airy) :    183.7
+  full scalar RW  :    176.7
+
+saved richards_wolf_axial.png

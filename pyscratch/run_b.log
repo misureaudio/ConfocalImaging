@@ -1,0 +1,15 @@
+PSF: sum=1.000000  peak=2.822e-04
+[test] point-source blur vs PSF:  max|diff| = 2.17e-19
+data: observed=200532  expected=200000 photons
+  it   0:  NMSE=0.73181  resid=    881.1  TV=    223234  peak=     13.5  sum=   200542
+  it   1:  NMSE=0.63833  resid=    728.0  TV=    229882  peak=     20.9  sum=   200542
+  it   2:  NMSE=0.56771  resid=    669.4  TV=    235907  peak=     28.4  sum=   200543
+  it   5:  NMSE=0.44717  resid=    593.0  TV=    251802  peak=     50.1  sum=   200549
+  it  10:  NMSE=0.39784  resid=    554.6  TV=    272583  peak=     82.6  sum=   200563
+  it  20:  NMSE=0.47470  resid=    534.4  TV=    304014  peak=    134.4  sum=   200594
+  it  50:  NMSE=0.83946  resid=    524.9  TV=    373464  peak=    236.7  sum=   200673
+  it 100:  NMSE=1.28059  resid=    523.9  TV=    459377  peak=    335.7  sum=   200723
+  it 159:  NMSE=1.65946  resid=    523.9  TV=    541391  peak=    425.5  sum=   200758
+L-curve corner @ iter 10   min-NMSE @ iter 10
+NMSE  blurred=0.7218   deconvolved=0.3978   improvement=1.81x
+saved rl_deconvolution.png

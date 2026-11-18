@@ -1,0 +1,22 @@
+=== RL convergence bound  (identical data to rl_deconvolution.py) ===
+observed photons sum(I) = 200532   (conserved sum of every iterate)
+  it   0:  L=    19488.43  dL=50883.0145  bound=30525.2559  dL/bnd= 1.667  NMSE=0.73181
+  it   1:  L=    34800.33  dL=15311.9069  bound=12160.0247  dL/bnd= 1.259  NMSE=0.63833
+  it   2:  L=    42599.15  dL= 7798.8205  bound= 6060.8414  dL/bnd= 1.287  NMSE=0.56771
+  it   5:  L=    51800.89  dL= 1889.4085  bound= 1611.6605  dL/bnd= 1.172  NMSE=0.44717
+  it  10:  L=    55835.34  dL=  443.5408  bound=  473.5201  dL/bnd= 0.937  NMSE=0.39784
+  it  20:  L=    57609.94  dL=   76.5836  bound=  114.5675  dL/bnd= 0.668  NMSE=0.47470
+  it  50:  L=    58133.11  dL=    0.2597  bound=   15.3557  dL/bnd= 0.017  NMSE=0.83946
+  it 100:  L=    58051.60  dL=   -1.8925  bound=    3.7782  dL/bnd=-0.501  NMSE=1.28059
+  it 159:  L=    57957.21  dL=   -1.2791  bound=    1.5334  dL/bnd=-0.834  NMSE=1.65946
+
+L-curve corner @ it 10   min-NMSE @ it 10
+sum(I) = 200532
+(i)  monotonicity  dL >= 0 :  violations = 109  first at it 51
+(ii) KL lower bound dL >= sum(I)*KL :  tight it 0-9 (ratio 0.97-1.67);  loose from it ~10 (finite-image FFT boundary effects break exact flux conservation)
+     sum(I)*KL -> 0 as the iterates converge (KL(p^{t+1}||p^t) -> 0)
+empirical linear rate  rho = median(|dL^{t+1}/dL^{t}|), it 30-59 = 0.873
+  -> dL decays ~geometrically (rho<1) toward the ML fixed point
+NMSE  blurred=0.7218   at corner (it 10)=0.3978   improvement=1.81x
+log-likelihood:  L(init)=19488.43  L(corner)=55835.34  L(final)=57957.21
+  L keeps RISING past the NMSE minimum (it 10):  L(corner)=55835.34  <  L(final)=57957.21

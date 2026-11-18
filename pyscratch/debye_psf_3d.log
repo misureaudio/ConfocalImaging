@@ -1,0 +1,30 @@
+=== Debye 3-D confocal PSF  (NA=1.40 n0=1.5 lam=500 nm) ===
+cos(alpha)=0.3590  alpha=68.96 deg  kmax/kmed=0.9333
+
+--- on-axis |U|^2 FWHM (single path), nm (full width) ---
+  on-axis, wt u^0 (obl-free):    460.7 nm
+  Debye 3-D         u^1      :    481.6 nm
+  Debye 3-D (grid)  u^1      :    480.0 nm
+  R-W scalar        u^{1/2}  :    468.0 nm
+  R-W vectorial     u^{1/2}+u^{5/2}:    479.0 nm
+  [Part (a) Abbe paraxial reference = 678 nm (small-angle axial bandwidth)]
+
+--- axial FWHM at r=0, nm ---
+  confocal |U|^4 :    344.5 nm
+  single   |U|^2 :    480.0 nm
+  ratio |U|^4 / |U|^2 = 0.718  (confocal narrows the axial lobe)
+
+--- lateral FWHM at z=0, nm (full width = 2 x radius) ---
+  confocal |U|^4 :    131.8 nm
+  single   |U|^2 :    183.6 nm
+  paraxial Airy  :    183.7 nm  (first-zero 435.7 nm)
+
+--- peak & sidelobe (confocal |U|^4) ---
+  axial  main-lobe peak=1.000  first side lobe=0.1389  at z=-283 nm
+  lateral main-lobe peak=1.000 first side lobe=0.9996  at r=2 nm
+
+--- k-space support (missing cone) ---
+  propagating support:  k_rho <= kmax = 1.759e+07 1/m  (cone half-angle alpha)
+  single-path OTF support radius (transverse)  = 2 kmax = 3.519e+07 1/m
+  confocal OTF support radius (transverse)     = 2 kmax = 3.519e+07 1/m  (product of two pupils -> doubled Abbe bandwidth)
+  missing cone:  k_rho > kmax  (evanescent/super-NA)  ->  angular gap = 21.04 deg from the axis in k-space
